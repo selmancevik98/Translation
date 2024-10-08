@@ -26,6 +26,16 @@ android {
     }
 }
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.selmancevik98' // Grup ID'niz
+            artifactId = 'Translation' // Kütüphane adınız
+            version = '0.3.0' // Versiyon numaranız
+        }
+    }
+}
+
 dependencies {
 
     implementation libs.appcompat
